@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Container for the entire page */
+.page-container {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff3e0;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading for the service details */
+.page-container h1 {
+    color: #ff6f61;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+
+/* Loading text */
+.page-container p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}
+
+/* Service and pincode details */
+.service-details {
+    text-align: center;
+    font-size: 20px;
+    color: #ff7043;
+    margin-bottom: 10px;
+}
+
+/* Employee details container */
+.employee-details {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ffccbc;
+    border-radius: 8px;
+}
+
+/* Individual employee detail */
+.employee-details p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ff8a65;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 600px) {
+    .page-container {
+        padding: 10px;
+    }
+
+    .service-details,
+    .employee-details p {
+        font-size: 16px;
+    }
+}

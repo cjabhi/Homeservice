@@ -1,0 +1,150 @@
+.container {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #ffffff; /* White background for a clean look */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 1000px;
+  margin: auto;
+  margin-top: 16px;
+}
+
+.name {
+  margin: 0 0 8px;
+  color: #2c3e50; /* Darker color for the name */
+  font-size: 24px; /* Larger font size for name */
+  font-weight: bold; /* Bold font weight for emphasis */
+}
+
+.description,
+.contactNo {
+  margin: 0 0 16px;
+  color: #7f8c8d; /* Medium gray color for descriptions */
+}
+
+.contactNo {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-right: 8px;
+  color: #555; /* Darker gray for icons */
+}
+
+.infoBox {
+  margin-bottom: 16px;
+}
+
+.infoHeader {
+  margin: 0 0 8px;
+  color: #555; /* Darker gray for headers */
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 4px;
+}
+
+.horizontalBox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.horizontalItem {
+  background: #f9f9f9; /* Light gray background */
+  padding: 12px; /* Increased padding for better spacing */
+  border: 1px solid #eee;
+  border-radius: 4px;
+  margin: 8px; /* Increased margin for spacing */
+  flex: 1 0 auto;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Added transition for smooth effect */
+  position: relative; /* Ensure the gradient border stays in place */
+}
+
+.horizontalItem::before {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d); /* Gradient background */
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.horizontalItem:hover {
+  transform: translateY(-2px); /* Lift effect on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Enhanced shadow on hover */
+}
+
+/* Optional: Add gradient background or additional hover effects for more attractiveness */
+.horizontalItem::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(to right, #6a82fb, #fc5c7d); /* Gradient background */
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+button {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #0070f3; /* Primary blue color */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Added transition for smooth effect */
+}
+
+button:hover {
+  background-color: #005bb5; /* Darker blue on hover */
+  transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+button:active {
+  transform: translateY(0); /* Reset the lift on active */
+}
+
+a {
+  text-decoration: none;
+  color: #0070f3; /* Blue color for links */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Added transition for smooth effect */
+}
+
+a:hover {
+  color: #005bb5; /* Darker blue on hover */
+}
+
+.description {
+  position: relative;
+}
+
+.show-more {
+  color: #0070f3; /* Primary blue color for the link */
+  cursor: pointer;
+  margin-left: 5px;
+  font-size: 14px; /* Smaller font size for the link */
+  transition: color 0.3s ease; /* Added transition for smooth effect */
+}
+
+.show-more:hover {
+  color: #005bb5; /* Darker blue on hover */
+}
+
+.show-more:active {
+  color: #003f7d; /* Even darker blue on active */
+}
